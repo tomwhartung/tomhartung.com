@@ -1,8 +1,63 @@
 {% extends "content/base.html" %}
 
+{% block head %}
+ {{ block.super }}
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+ <link rel="stylesheet" href="https://cdn.muicss.com/mui-latest/extra/mui-colors.min.css">
+ <script src="https://cdn.muicss.com/mui-latest/extra/mui-combined.min.js"></script>
+{% endblock %}
+
+
 {% block content %}
- <h1><b>Hi!</b></h1>
- <p>
-	 Welcome to the new home page for tomhartung.com.
- </p>
+ <div id="content-wrapper" class="mui--text-center">
+  <div class="mui--appbar-height"></div>
+  <br>
+  <br>
+  <div class="mui--text-display3 row wow zoomInDown">Brand.io</div>
+  <br>
+  <br>
+  <button class="mui-btn mui-btn--raised">Get started</button>
+  <br>
+  <br>
+  <i class="fa fa-university fa-5x mui--color-pink-A100 mui--text-display3 row wow zoomIn" aria-hidden="true"></i>
+ </div>
+{% endblock %}
+
+{% block footer %}
+ <footer>
+  <div class="mui-container mui--text-center mui--text-bottom">
+   <p>
+     Copyright &copy; 2018 by
+      <a href="https://tomwhartung.com" class="blue-text text-lighten-3"
+         title="TomWHartung.com home page" target="_blank">
+       Tom W. Hartung</a> and
+      <a href="https://JooMooWebSites.com" class="blue-text text-lighten-3"
+         title="JooMoo WebSites.com home page" target="_blank">
+       JooMoo WebSites LLC</a>.
+     All Rights Reserved.</p>
+   <p>
+     <b>Your use of this site implies you consent to our
+       <a href="/legal/terms_of_service" class="blue-text text-lighten-3"
+          title="Terms of Service for this site">
+        Terms of Service</a> and
+       <a href="/legal/privacy_policy" class="blue-text text-lighten-3"
+          title="Privacy Policy for this site">
+        Privacy Policy</a>.</b></p>
+   <p>
+    Site completely designed, created, and maintained by
+     <a href="https://JooMooWebSites.com" class="blue-text text-lighten-3"
+        title="JooMooWebSites.com home page" target="_blank">
+      JooMoo WebSites LLC</a>.
+   </p>
+  </div>
+ </footer>
+{% endblock %}
+
+{% block scripts %}
+ {{ block.super }}
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+ <script>
+   new WOW().init();
+ </script>
 {% endblock %}
