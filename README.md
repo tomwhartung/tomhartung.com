@@ -13,6 +13,9 @@ Another incarnation of tomhartung.com , this time using django and material desi
 - Op-Opinions
 - Free Opinions
 
+- Tom's Take
+- Tom's Take on Things
+
 - Reviews and Recommendations
 - [Corn-pone opinions]
 

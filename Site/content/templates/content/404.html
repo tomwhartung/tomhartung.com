@@ -1,0 +1,18 @@
+{% extends 'content/base.html' %}
+
+{% block content %}
+    <h1 class="center">404 &ndash; Not Found</h1>
+    <h5 class="center">
+     <b>Unfortunately, we could not find the page:</b>
+    </h5>
+    <h4 class="center">
+     <b><q><u>{{ unknown_page }}</u></q></b>
+    </h4>
+    <hr>
+    <h5 class="center"><u>Here's an idea:</u></h5>
+    <p class="center">
+     <b>Go to the
+      <a href="/" title="Home page of this site">Home</a>
+      page of this site.</b>
+    </p>
+{% endblock %}
