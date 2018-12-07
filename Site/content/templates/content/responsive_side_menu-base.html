@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+ {% block head %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   {% if title %}
+    {{ title }}
+   {% else %}
+    TomHartung.com
+   {% endif %}
+  </title>
+  <meta name="description" content="">
+  <!-- CSS -->
+  {% load static %}
+  <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
+        rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="{% static 'content/css/style.css' %}" type="text/css" />
+  <!-- The side menu example has the script tags in the head, and has jquery after muicss.js -->
+  <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="{% static 'content/js/script.js' %} "></script>
+  <link rel="shortcut icon" href="{% static 'content/favicon.ico' %}">
+ {% endblock %}
+</head>
+
+<body>
+ <div id="sidedrawer" class="mui--no-user-select">
+   <div id="sidedrawer-brand" class="mui--appbar-line-height">
+     <span class="mui--text-title">Brand.io</span>
+   </div>
+   <div class="mui-divider"></div>
+   <ul>
+     <li>
+       <strong>Category 1</strong>
+       <ul>
+         <li><a href="#">Item 1</a></li>
+         <li><a href="#">Item 2</a></li>
+         <li><a href="#">Item 3</a></li>
+       </ul>
+     </li>
+     <li>
+       <strong>Category 2</strong>
+       <ul>
+         <li><a href="#">Item 1</a></li>
+         <li><a href="#">Item 2</a></li>
+         <li><a href="#">Item 3</a></li>
+       </ul>
+     </li>
+     <li>
+       <strong>Category 3</strong>
+       <ul>
+         <li><a href="#">Item 1</a></li>
+         <li><a href="#">Item 2</a></li>
+         <li><a href="#">Item 3</a></li>
+       </ul>
+     </li>
+   </ul>
+ </div>
+ <header id="header">
+   <div class="mui-appbar mui--appbar-line-height">
+     <div class="mui-container-fluid">
+       <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+       <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+       <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
+     </div>
+   </div>
+ </header>
+ <div id="content-wrapper">
+   <div class="mui--appbar-height"></div>
+   <div class="mui-container-fluid">
+    {% block content %}
+    {% endblock %}
+   </div>
+ </div>
+
+ {% block footer %}
+  <footer id="footer">
+   <div class="mui-container-fluid">
+    <p>
+      Copyright &copy; 2018 by
+       <a href="https://tomwhartung.com" class="blue-text text-lighten-3"
+          title="TomWHartung.com home page" target="_blank">
+        Tom W. Hartung</a> and
+       <a href="https://JooMooWebSites.com" class="blue-text text-lighten-3"
+          title="JooMoo WebSites.com home page" target="_blank">
+        JooMoo WebSites LLC</a>.
+      All Rights Reserved.</p>
+    <p>
+      <b>Your use of this site implies you consent to our
+        <a href="/legal/terms_of_service" class="blue-text text-lighten-3"
+           title="Terms of Service for this site">
+         Terms of Service</a> and
+        <a href="/legal/privacy_policy" class="blue-text text-lighten-3"
+           title="Privacy Policy for this site">
+         Privacy Policy</a>.</b></p>
+    <p>
+     Site completely designed, created, and maintained by
+      <a href="https://JooMooWebSites.com" class="blue-text text-lighten-3"
+         title="JooMooWebSites.com home page" target="_blank">
+       JooMoo WebSites LLC</a>.
+    </p>
+   </div><!-- .mui-container-fluid -->
+  </footer>
+ {% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+</body>
+</html>
