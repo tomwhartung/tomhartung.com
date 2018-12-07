@@ -14,12 +14,11 @@
   </title>
   <meta name="description" content="">
   <!-- CSS -->
+  {% load static %}
   <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
-  <link href="static/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="{% static 'content/css/style.css' %}" type="text/css" />
   <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'content/css/style.css' %}">
   <script src="{% static 'content/js/script.js' %} "></script>
   <link rel="shortcut icon" href="{% static 'content/favicon.ico' %}">
  {% endblock %}
@@ -106,8 +105,6 @@
  {% endblock %}
 
 {% block scripts %}
- <!-- JavaScript - in general, we will want to import jQuery first -->
- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 {% endblock %}
 
 </body>
