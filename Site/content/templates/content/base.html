@@ -15,8 +15,10 @@
   <meta name="description" content="">
   <!-- CSS -->
   {% load static %}
-  <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
+        rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="{% static 'content/css/style.css' %}" type="text/css" />
+  <!-- The side menu example has the script tags in the head, and has jquery after muicss.js -->
   <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="{% static 'content/js/script.js' %} "></script>
@@ -25,47 +27,37 @@
 </head>
 
 <body>
- <div id="sidedrawer" class="mui--no-user-select">
-   <div id="sidedrawer-brand" class="mui--appbar-line-height">
-     <span class="mui--text-title">Brand.io</span>
-   </div>
-   <div class="mui-divider"></div>
-   <ul>
-     <li>
-       <strong>Category 1</strong>
-       <ul>
-         <li><a href="#">Item 1</a></li>
-         <li><a href="#">Item 2</a></li>
-         <li><a href="#">Item 3</a></li>
-       </ul>
-     </li>
-     <li>
-       <strong>Category 2</strong>
-       <ul>
-         <li><a href="#">Item 1</a></li>
-         <li><a href="#">Item 2</a></li>
-         <li><a href="#">Item 3</a></li>
-       </ul>
-     </li>
-     <li>
-       <strong>Category 3</strong>
-       <ul>
-         <li><a href="#">Item 1</a></li>
-         <li><a href="#">Item 2</a></li>
-         <li><a href="#">Item 3</a></li>
-       </ul>
-     </li>
-   </ul>
- </div>
- <header id="header">
-   <div class="mui-appbar mui--appbar-line-height">
-     <div class="mui-container-fluid">
-       <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
-       <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
-       <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
-     </div>
-   </div>
- </header>
+ <header class="mui-appbar mui--z1">
+   <div class="mui-container">
+     <table>
+       <tr class="mui--appbar-height">
+         <td class="mui--text-title">
+          <a href="/">TomHartung.com</a>
+         </td>
+         <td align="mui--text-right">
+           <ul class="mui-list--inline mui--text-body2 ">
+            <li><a href="/opinions">Opinions</a></li>
+            <li>
+             <div class="mui-dropdown">
+              <a data-mui-toggle="dropdown">
+                Legal
+                <span class="mui-caret"></span>
+              </a>
+              <ul class="mui-dropdown__menu">
+               <li>
+                <a href="/legal/affiliate_marketing_disclosure">
+                 Affiliate Marketing Disclosure</a></li>
+               <li><a href="/legal/privacy_policy">Privacy Policy</a></li>
+               <li><a href="/legal/terms_of_service">Terms of Service</a></li>
+              </ul>
+             </div>
+            </li>
+           </ul>
+         </td>
+       </tr>
+     </table>
+   </div><!-- .mui-container* -->
+ </header><!-- .mui-appbar -->
  <div id="content-wrapper">
    <div class="mui--appbar-height"></div>
    <div class="mui-container-fluid">
