@@ -59,12 +59,15 @@
   </div><!-- .mui-container* -->
  </header><!-- .mui-appbar -->
  <div id="content-wrapper">
-   <div class="mui--appbar-height"></div>
-   <div class="mui-container-fluid">
-    {% block content %}
-    {% endblock %}
+   <div class="mui--appbar-height">
    </div>
- </div>
+   <div class="mui-container-fluid toms-content">
+    <div class="mui-row">
+     {% block content %}
+     {% endblock %}
+    </div><!-- .mui-row -->
+   </div><!-- .mui- -appbar-height -->
+ </div><!-- .content-wrapper -->
 
  {% block footer %}
   <footer class="mui--bg-primary-light mui--text-dark-secondary">
