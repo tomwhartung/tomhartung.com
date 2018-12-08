@@ -27,36 +27,36 @@
 </head>
 
 <body>
- <header class="mui-appbar mui--z1">
-   <div class="mui-container">
-     <table>
-       <tr class="mui--appbar-height">
-         <td class="mui--text-title">
-          <a href="/">TomHartung.com</a>
-         </td>
-         <td align="mui--text-right">
-           <ul class="mui-list--inline mui--text-body2 ">
-            <li><a href="/opinions">Opinions</a></li>
-            <li>
-             <div class="mui-dropdown">
-              <a data-mui-toggle="dropdown">
-                Legal
-                <span class="mui-caret"></span>
-              </a>
-              <ul class="mui-dropdown__menu">
-               <li>
-                <a href="/legal/affiliate_marketing_disclosure">
-                 Affiliate Marketing Disclosure</a></li>
-               <li><a href="/legal/privacy_policy">Privacy Policy</a></li>
-               <li><a href="/legal/terms_of_service">Terms of Service</a></li>
-              </ul>
-             </div>
-            </li>
-           </ul>
-         </td>
-       </tr>
-     </table>
-   </div><!-- .mui-container* -->
+ <header class="mui-appbar mui--bg-primary-light mui--z2">
+  <div class="mui-container">
+   <table>
+    <tr class="mui--appbar-height">
+     <td class="mui--text-title">
+      <a href="/">TomHartung.com</a>
+     </td>
+     <td align="mui--text-right">
+      <ul class="mui-list--inline mui--text-body2 ">
+       <li><a href="/opinions">Opinions</a></li>
+       <li>
+        <div class="mui-dropdown">
+         <a data-mui-toggle="dropdown">
+           Legal
+           <span class="mui-caret"></span>
+         </a>
+         <ul class="mui-dropdown__menu">
+          <li>
+           <a href="/legal/affiliate_marketing_disclosure">
+            Affiliate Marketing Disclosure</a></li>
+          <li><a href="/legal/privacy_policy">Privacy Policy</a></li>
+          <li><a href="/legal/terms_of_service">Terms of Service</a></li>
+         </ul>
+        </div>
+       </li>
+      </ul>
+     </td>
+    </tr>
+   </table>
+  </div><!-- .mui-container* -->
  </header><!-- .mui-appbar -->
  <div id="content-wrapper">
    <div class="mui--appbar-height"></div>
@@ -67,26 +67,35 @@
  </div>
 
  {% block footer %}
-  <footer class="mui--text-light">
+  <footer class="mui--bg-primary-light mui--text-dark-secondary">
    <div class="mui-container mui--text-center">
-    <p>
-      Copyright &copy; 2018-2019 by
-       <a href="https://tomwhartung.com" class=""
-          title="TomWHartung.com home page" target="_blank">
-        Tom W. Hartung</a> and
-       <a href="https://JooMooWebSites.com" class=""
-          title="JooMoo WebSites.com home page" target="_blank">
-        JooMoo WebSites LLC</a>.
-      All Rights Reserved.
-      <b>Your use of this site implies you have read our
-        <a href="/legal/affiliate_marketing_disclosure" class=""
-           title="Affiliate Marketing Disclosure for this site">
-         Affiliate Marketing Disclosure</a>.
-     Site by
-      <a href="https://JooMooWebSites.com" class="blue-text text-lighten-3"
-         title="JooMooWebSites.com home page" target="_blank">
+    <div>
+     Copyright &copy; 2018-2019 by
+      <a href="https://tomwhartung.com" class="mui--text-dark"
+         title="TomWHartung.com home page" target="_blank">
+       Tom W. Hartung</a> and
+      <a href="https://JooMooWebSites.com" class="mui--text-dark"
+         title="JooMoo WebSites.com home page" target="_blank">
        JooMoo WebSites LLC</a>.
-    </p>
+     All Rights Reserved.
+     <br>
+     <b>
+      Your use of this site implies you agree with our
+       <a href="/legal/terms_of_service" class="mui--text-dark"
+          title="Terms of Service for this site">
+        Terms of Service</a>
+       and
+       <a href="/legal/privacy_policy" class="mui--text-dark"
+          title="Privacy Policy for this site">
+        Privacy Policy</a>.
+      </b>
+    </div>
+    <div class="mui--divider-top">
+     Site by
+      <a href="https://JooMooWebSites.com" class="mui--text-dark"
+            title="JooMooWebSites.com home page" target="_blank">
+          JooMoo WebSites LLC</a>.
+    </div><!-- .-divider-top -->
    </div>
   </footer>
  {% endblock %}
