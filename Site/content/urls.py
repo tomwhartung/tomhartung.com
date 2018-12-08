@@ -28,6 +28,7 @@ More:
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^home$', views.home, name='home'),
+    url(r'^opinions$', views.opinions, name='opinions'),
     url(r'^v$', views.versions, name='versions'),
     url(r'^legal/affiliate_marketing_disclosure$',
         views.affiliate_marketing_disclosure,
