@@ -26,6 +26,19 @@ def home(request):
     return render(request, template, context)
 
 
+def opinions(request):
+
+    """ Load and render the opinions template """
+
+    title = 'Opinions';
+
+    template = loader.get_template('content/opinions.html')
+    context = {
+        'title': title,
+    }
+    return HttpResponse(template.render(context, request))
+
+
 def versions(request):
 
     """ Load and render the versions template """
@@ -114,4 +127,3 @@ def terms_of_service(request):
         'title': title,
     }
     return render(request, template, context)
-
