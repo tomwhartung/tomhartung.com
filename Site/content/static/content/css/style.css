@@ -35,7 +35,7 @@ header ul.mui-list--inline {
 }
 
 header a {
-  color: white;
+  color: black;
 }
 
 header table {
@@ -45,7 +45,6 @@ header table {
 /**
  * Content CSS
  */
-
 #content-wrapper {
   min-height: 100%;
 
@@ -55,13 +54,20 @@ header table {
   padding-bottom: 100px;
 }
 
+.toms-content {
+  margin-top: 2em;
+}
+.toms-panel {
+  padding-left: 2em;
+  padding-right: 3em;
+}
 
 /**
  * Footer CSS
  */
 footer {
   box-sizing: border-box;
-  height: 10em;
-  background-color: black;
-  padding-top: 1em;
+  height: 8em;
+  margin-top: 2em;
+  padding-top: .75em;
 }
