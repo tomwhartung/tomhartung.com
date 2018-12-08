@@ -1,18 +1,22 @@
 {% extends 'content/base.html' %}
 
 {% block content %}
-    <h1 class="center">404 &ndash; Not Found</h1>
-    <h5 class="center">
-     <b>Unfortunately, we could not find the page:</b>
-    </h5>
-    <h4 class="center">
-     <b><q><u>{{ unknown_page }}</u></q></b>
-    </h4>
-    <hr>
-    <h5 class="center"><u>Here's an idea:</u></h5>
-    <p class="center">
-     <b>Go to the
-      <a href="/" title="Home page of this site">Home</a>
-      page of this site.</b>
-    </p>
+ <div class="mui-col-xs-10 mui-col-xs-offset-1 mui-col-sm-8 mui-col-sm-offset-2 mui-col-md-6 mui-col-md-offset-3">
+  <div class="mui-panel toms-panel">
+   <h1 class="mui--text-center">404 &ndash; Not Found</h1>
+   <h5 class="mui--text-center">
+    <b>Unfortunately, we could not find the page:</b>
+   </h5>
+   <h4 class="mui--text-center">
+    <b><q><u>{{ unknown_page }}</u></q></b>
+   </h4>
+   <hr>
+   <h5 class="mui--text-center"><u>Here's an idea:</u></h5>
+   <p class="mui--text-center">
+    <b>Go to the
+     <a href="/" title="Home page of this site">Home</a>
+     page of this site.</b>
+   </p>
+  </div><!-- .mui-panel -->
+ </div><!-- .mui-col-* -->
 {% endblock %}
