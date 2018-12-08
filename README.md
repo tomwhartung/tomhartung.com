@@ -6,16 +6,9 @@ Another incarnation of tomhartung.com , this time using django and material desi
 
 1. Make money by expressing my interesting opinions in fascinating, unusual, well-written stores
 
-# Ideas
+# Creating `base.html` and `home.html`
 
-## Tagline
+An overview of the process used to get from the MUI example templates to what I am using is:
 
-- Op-Opinions
-- Free Opinions
-
-- Tom's Take
-- Tom's Take on Things
-
-- Reviews and Recommendations
-- [Corn-pone opinions]
+- In the `material_design/07-mui/10-strategy` of the `always_learning_google_products` repo
 
