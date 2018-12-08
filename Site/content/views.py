@@ -26,6 +26,19 @@ def home(request):
     return render(request, template, context)
 
 
+def about(request):
+
+    """ Load and render the about template """
+
+    title = 'Non-Corn-Pone Opinions';
+
+    template = loader.get_template('content/about.html')
+    context = {
+        'title': title,
+    }
+    return HttpResponse(template.render(context, request))
+
+
 def opinions(request):
 
     """ Load and render the opinions template """
