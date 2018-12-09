@@ -54,12 +54,30 @@ header table {
   padding-bottom: 100px;
 }
 
+/**
+ * toms-* style classes
+ */
 .toms-content {
   margin-top: 2em;
 }
 .toms-panel {
   padding-left: 2em;
   padding-right: 3em;
+}
+
+ul.toms-collection {
+  list-style: none;
+		margin-left: -2.5em;
+}
+ul li.toms-collection-item:first-child {
+  border-top: 1px solid lightgrey;
+}
+ul li.toms-collection-item {
+  border-bottom: 1px solid lightgrey;
+		padding: .25em 0em .25em 0em;
+}
+ol.toms-collection {
+		margin-left: -1em;
 }
 
 /**
