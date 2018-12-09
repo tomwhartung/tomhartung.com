@@ -118,18 +118,6 @@ def privacy_policy(request):
     return render(request, template, context)
 
 
-def questionnaire_disclaimer(request):
-
-    """ Load and render the questionnaire_disclaimer template """
-
-    title = 'Disclaimer';
-    template = 'content/legal/questionnaire_disclaimer.html'
-    context = {
-        'title': title,
-    }
-    return render(request, template, context)
-
-
 def terms_of_service(request):
 
     """ Load and render the terms_of_service template """
