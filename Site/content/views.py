@@ -18,7 +18,7 @@ def home(request):
 
     """ Load and render the Home page template """
 
-    title = 'Home ';
+    title = "Tom's Non-Corn-Pone Opinions";
     template = 'content/home.html'
     context = {
         'title': title,
