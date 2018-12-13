@@ -55,7 +55,8 @@ header table {
 }
 
 /**
- * toms-* style classes
+ * toms-* style classes: My CusTOMizations
+	* ---------------------------------------
  */
 .toms-content {
   margin-top: 2em;
@@ -63,6 +64,13 @@ header table {
 .toms-panel {
   padding-left: 2em;
   padding-right: 3em;
+}
+
+blockquote.toms-blockquote {
+  border-left: .33em solid darkgrey;
+		font-style: italic;
+		font-size: 1.1em;
+		padding-left: 1em;
 }
 
 ul.toms-collection {
@@ -78,6 +86,12 @@ ul li.toms-collection-item {
 }
 ol.toms-collection {
 		margin-left: -1em;
+}
+/**
+	* Semantic classes
+	*/
+.title {
+  text-decoration: underline;
 }
 
 /**
