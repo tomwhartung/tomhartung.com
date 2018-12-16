@@ -39,6 +39,19 @@ def about(request):
     return HttpResponse(template.render(context, request))
 
 
+def index(request):
+
+    """ Load and render the index template """
+
+    title = 'index';
+
+    template = loader.get_template('content/index.html')
+    context = {
+        'title': title,
+    }
+    return HttpResponse(template.render(context, request))
+
+
 def opinions(request):
 
     """ Load and render the opinions template """
