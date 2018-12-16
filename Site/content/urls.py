@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^home$', views.home, name='home'),
     url(r'^about$', views.about, name='about'),
+    url(r'^index$', views.index, name='index'),
     url(r'^opinions$', views.opinions, name='opinions'),
     url(r'^v$', views.versions, name='versions'),
     url(r'^legal/affiliate_marketing_disclosure$',
