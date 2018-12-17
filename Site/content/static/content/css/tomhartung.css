@@ -56,8 +56,14 @@ header table {
 
 /**
  * toms-* style classes: My CusTOMizations
-	* ---------------------------------------
+ * ---------------------------------------
  */
+a {
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
 .toms-content {
   margin-top: 2em;
 }
@@ -68,28 +74,41 @@ header table {
 
 blockquote.toms-blockquote {
   border-left: .33em solid darkgrey;
-		font-style: italic;
-		font-size: 1.1em;
-		padding-left: 1em;
+  font-style: italic;
+  font-size: 1.1em;
+  padding-left: 1em;
 }
 
 ul.toms-collection {
   list-style: none;
-		margin-left: -2.5em;
+  margin-left: -2.5em;
 }
 ul li.toms-collection-item:first-child {
   border-top: 1px solid lightgrey;
 }
 ul li.toms-collection-item {
   border-bottom: 1px solid lightgrey;
-		padding: .25em 0em .25em 0em;
+  padding: .25em 0em .25em 0em;
 }
 ol.toms-collection {
-		margin-left: -1em;
+  margin-left: -1em;
 }
 /**
-	* Semantic classes
-	*/
+ * Semantic classes
+ */
+.bold {
+  font-weight: bold;
+}
+.italic,
+.dialog,
+.from-document {
+  font-style: italic;
+}
+.document-title {
+  font-style: italic;
+  text-decoration: underline;
+}
+.underline,
 .title {
   text-decoration: underline;
 }
