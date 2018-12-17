@@ -78,16 +78,26 @@ blockquote.toms-blockquote {
   font-size: 1.1em;
   padding-left: 1em;
 }
+blockquote.toms-breakout {
+  border-top: .1em solid lightgrey;
+  border-right: none;
+  border-bottom: .1em solid lightgrey;
+  border-left: none;
+  font-style: italic;
+  font-size: 1.2em;
+  margin-left: 0em;
+  padding: .33em .66em .33em .66em;
+}
 
 ul.toms-collection {
   list-style: none;
   margin-left: -2.5em;
 }
 ul li.toms-collection-item:first-child {
-  border-top: 1px solid lightgrey;
+  border-top: .1em solid lightgrey;
 }
 ul li.toms-collection-item {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: .1em solid lightgrey;
   padding: .25em 0em .25em 0em;
 }
 ol.toms-collection {
@@ -100,11 +110,11 @@ ol.toms-collection {
   font-weight: bold;
 }
 .italic,
-.dialog,
-.from-document {
+.dialog {
   font-style: italic;
 }
-.document-title {
+.document-title,
+.from-document {
   font-style: italic;
   text-decoration: underline;
 }
