@@ -52,13 +52,27 @@ def index(request):
     return HttpResponse(template.render(context, request))
 
 
-def opinions(request):
+def list_of_opinions(request):
 
-    """ Load and render the opinions template """
+    """ Load and render the list_of_opinions template """
 
-    title = 'Opinions';
+    title = 'List of Non-Corn-Pone Opinions';
 
-    template = loader.get_template('content/opinions.html')
+    template = loader.get_template('content/list_of_opinions.html')
+    context = {
+        'title': title,
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def opinion(request, opinion_file_no_ext='opinion_outline'):
+
+    """ Load and render the specified opinion template """
+
+    title = 'Non-Corn-Pone Opinion';
+
+    template_file = 'content/opinions/' + opinion_file_no_ext + '.html'
+    template = loader.get_template(template_file)
     context = {
         'title': title,
     }
