@@ -13,6 +13,8 @@ from django.template import loader
 from django.shortcuts import render
 from django.views.generic.base import View
 
+from .models import RUNNING_LOCALLY
+
 
 def home(request):
 
@@ -56,10 +58,17 @@ def list_of_opinions(request):
 
     """ Load and render the list_of_opinions template """
 
+
+    if RUNNING_LOCALLY == '0':
+        include_drafts = False
+    else:
+        include_drafts = True
+
     title = 'List of Non-Corn-Pone Opinions';
 
     template = loader.get_template('content/list_of_opinions.html')
     context = {
+        'include_drafts': include_drafts,
         'title': title,
     }
     return HttpResponse(template.render(context, request))
@@ -97,8 +106,8 @@ def versions(request):
     django_version_2 = django.get_version()
 
     from .models import DJANGO_DEBUG
-    from .models import RUNNING_LOCALLY
 
+    title = 'Versions'
     template = loader.get_template('content/versions.html')
     context = {
         'django_version_1': django_version_1,
@@ -106,6 +115,7 @@ def versions(request):
         'python_version': python_version,
         'DJANGO_DEBUG': DJANGO_DEBUG,
         'RUNNING_LOCALLY': RUNNING_LOCALLY,
+        'title': title,
     }
     return HttpResponse(template.render(context, request))
 
