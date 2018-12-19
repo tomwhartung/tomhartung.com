@@ -69,7 +69,14 @@ def opinion(request, opinion_file_no_ext='opinion_outline'):
 
     """ Load and render the specified opinion template """
 
-    title = 'Non-Corn-Pone Opinion';
+    if opinion_file_no_ext == 'book-alexander_hamilton':
+        title = 'Alexander Hamilton'
+    elif opinion_file_no_ext == 'book-four_hour_work_week':
+        title = 'Four Hour Work Week'
+    elif opinion_file_no_ext == 'opinion_outline':
+        title = 'Opinion Outline'
+    else:
+        title = '** TITLE NOT SET ***'
 
     template_file = 'content/opinions/' + opinion_file_no_ext + '.html'
     template = loader.get_template(template_file)
