@@ -113,11 +113,13 @@ ol.toms-collection {
   font-weight: bold;
 }
 .italic,
-.dialog {
+.dialog,
+.slang {
   font-style: italic;
 }
 .document-title,
-.from-document {
+.from-document,
+.song-title {
   font-style: italic;
   text-decoration: underline;
 }
