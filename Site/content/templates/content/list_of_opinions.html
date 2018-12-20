@@ -11,17 +11,33 @@
     {% if include_drafts is True %}
      <h4>This list includes drafts.</h4>
     {% endif %}
-    <p>
+   <p>
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
 </div><!-- .mui-row -->
 <div class="mui-row">
+ {% if include_drafts is True %}
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
   <div class="mui-panel toms-panel">
-   <h2 class="mui--text-center">Panel 1 h2</h2>
+   <h2 class="mui--text-center">Draft Panel 1 h2</h2>
    <p>
-    This is a panel.  Blah blah blah.
+    This is the first draft panel.  Blah blah blah.
+   </p>
+   <p>
+    Test URL:
+     <a href="/opinions/book-alexander_hamilton" target="_blank"
+        title="">
+      /opinions/book-alexander_hamilton</a>
+   </p>
+  </div><!-- .mui-panel -->
+ </div><!-- .mui-col-* -->
+ {% endif %}
+ <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
+  <div class="mui-panel toms-panel">
+   <h2 class="mui--text-center">Published Panel 1 h2</h2>
+   <p>
+    This is the first published panel.  Blah blah blah.
    </p>
    <p>
     Test URL:
@@ -45,11 +61,12 @@
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
+ {% if include_drafts is True %}
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
   <div class="mui-panel toms-panel">
-   <h4 class="mui--text-center">Panel 3 h4</h4>
+   <h4 class="mui--text-center">Draft Panel 3 h4</h4>
    <p>
-    This is yet another panel.  Yada yada yada.
+    This is another draft panel.  Yada yada yada.
    </p>
    <p>
     Test URL:
@@ -59,11 +76,12 @@
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
+ {% endif %}
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
   <div class="mui-panel toms-panel">
    <h2 class="mui--text-center">Panel 4 h2</h2>
    <p>
-    This is the last panel, for now.  Etc etc and so on.
+    This is the last published panel, for now.  Etc etc and so on.
    </p>
    <p>
     Test URL:
@@ -73,11 +91,12 @@
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
+ {% if include_drafts is True %}
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
   <div class="mui-panel toms-panel">
-   <h2 class="mui--text-center">Panel 4 h2</h2>
+   <h2 class="mui--text-center">Draft Panel</h2>
    <p>
-    This is the last panel, for now.  Etc etc and so on.
+    This is the last draft panel, for now..
    </p>
    <p>
     Test URL:
@@ -87,5 +106,6 @@
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
+ {% endif %}
 </div><!-- .mui-row -->
 {% endblock %}
