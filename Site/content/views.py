@@ -74,9 +74,9 @@ def opinions_list(request):
     return HttpResponse(template.render(context, request))
 
 
-def opinion(request, opinion_file_no_ext='opinion_outline'):
+def opinion_files(request, opinion_file_no_ext='opinion_outline'):
 
-    """ Load and render the specified opinion template """
+    """ Load and render the specified opinion_files template """
 
     if opinion_file_no_ext == 'book-alexander_hamilton':
         title = 'Alexander Hamilton'
@@ -89,7 +89,7 @@ def opinion(request, opinion_file_no_ext='opinion_outline'):
     else:
         title = '** TITLE NOT SET ***'
 
-    template_file = 'content/opinions/' + opinion_file_no_ext + '.html'
+    template_file = 'content/opinion_files/' + opinion_file_no_ext + '.html'
     template = loader.get_template(template_file)
     context = {
         'title': title,
