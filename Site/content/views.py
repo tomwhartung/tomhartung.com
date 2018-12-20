@@ -84,6 +84,8 @@ def opinion(request, opinion_file_no_ext='opinion_outline'):
         title = 'Four Hour Work Week'
     elif opinion_file_no_ext == 'opinion_outline':
         title = 'Opinion Outline'
+    elif opinion_file_no_ext == 'rant-tech_shortage':
+        title = 'Tech Shortage Is BS Rant'
     else:
         title = '** TITLE NOT SET ***'
 
