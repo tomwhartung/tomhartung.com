@@ -66,15 +66,22 @@
  {% endif %}
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
   <div class="mui-panel toms-panel">
-   <h3 class="mui--text-center">Panel 2 h3</h3>
+   <h3 class="mui--text-center">Some People Work Only Four Hours Per Week</h3>
    <p>
-    This is another panel.  Blah blah blah.
+    In his book
+     <span class="document-title">The 4-Hour Workweek</span>
+     Tim Ferriss explains how to work less and leverage technology
+     rather than letting it rule your life.
    </p>
    <p>
     Test URL:
-     <a href="/opinions/book-four_hour_work_week" target="_blank"
-        title="">
-      /opinions/four_hour_work_week</a>
+     <a >
+   </p>
+   <p class="mui--text-center">
+    <a href="/opinions/book-four_hour_work_week"
+       title="Read a review of the 4-Hour Workweek by Tim Ferriss"
+       class="mui-btn mui-btn--raised mui-btn--primary mui--text-white mui-btn--small">
+     Work 4 Hours a Week</a>
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
@@ -109,6 +116,26 @@
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
+ {% if include_drafts is True %}
+ <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
+  <div class="mui-panel toms-panel">
+   <h6 class="mui--text-center mui--text-danger">&mdash;&nbsp;draft&nbsp;&mdash;</h6>
+   <h3 class="mui--text-center">
+    It's Possible to Vote for Third-Party Candidates</h3>
+   <p>
+    Sometimes it's best to vote for a third party candidate.
+    Third parties can help introduce new ideas and perspectives into the mix.
+   </p>
+   <p>
+   </p>
+   <p class="mui--text-center">
+    <a href="/opinions/book-alexander_hamilton" title="Read more about this opinion"
+       class="mui-btn mui-btn--raised mui-btn--primary mui--text-white mui-btn--small">
+     About This Opinion</a>
+   </p>
+  </div><!-- .mui-panel -->
+ </div><!-- .mui-col-* -->
+ {% endif %}
  {% if include_drafts is True %}
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
   <div class="mui-panel toms-panel">
