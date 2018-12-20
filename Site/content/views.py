@@ -54,9 +54,9 @@ def index(request):
     return HttpResponse(template.render(context, request))
 
 
-def list_of_opinions(request):
+def opinions_list(request):
 
-    """ Load and render the list_of_opinions template """
+    """ Load and render the opinions_list template """
 
 
     if RUNNING_LOCALLY == '0':
@@ -66,7 +66,7 @@ def list_of_opinions(request):
 
     title = 'List of Non-Corn-Pone Opinions';
 
-    template = loader.get_template('content/list_of_opinions.html')
+    template = loader.get_template('content/opinions_list.html')
     context = {
         'include_drafts': include_drafts,
         'title': title,
