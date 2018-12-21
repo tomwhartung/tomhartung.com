@@ -74,7 +74,7 @@ def opinions_list(request):
     return HttpResponse(template.render(context, request))
 
 
-def opinion_files(request, opinion_file_no_ext='opinion_outline'):
+def opinion_files(request, opinion_file_no_ext='opinion-outline'):
 
     """ Load and render the specified opinion_files template """
 
@@ -82,8 +82,10 @@ def opinion_files(request, opinion_file_no_ext='opinion_outline'):
         title = 'Alexander Hamilton'
     elif opinion_file_no_ext == 'book-four_hour_work_week':
         title = 'Four Hour Work Week'
-    elif opinion_file_no_ext == 'opinion_outline':
+    elif opinion_file_no_ext == 'opinion-outline':
         title = 'Opinion Outline'
+    elif opinion_file_no_ext == 'opinion-nothing_on_this_page_is_real':
+        title = 'Nothing on This Page Is Real'
     elif opinion_file_no_ext == 'rant-tech_shortage':
         title = 'Tech Shortage Is BS Rant'
     else:
