@@ -80,6 +80,10 @@ def opinion_files(request, opinion_file_no_ext='opinion-outline'):
 
     if opinion_file_no_ext == 'book-alexander_hamilton':
         title = 'Alexander Hamilton'
+    elif opinion_file_no_ext == 'book-deep_work':
+        title = "Deep Work: Book Review"
+    elif opinion_file_no_ext == 'book-dorie_clark':
+        title = "Review of Dorie Clark's Book"
     elif opinion_file_no_ext == 'book-four_hour_work_week':
         title = 'Four Hour Work Week'
     elif opinion_file_no_ext == 'opinion-outline':
