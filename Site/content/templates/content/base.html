@@ -16,6 +16,7 @@
         content="A blog containing unconventional, 'non-corn-pone' opinions, inspired by an essay by Mark Twain">
   <!-- CSS -->
   {% load static %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
         rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="{% static 'content/css/tomhartung.css' %}" type="text/css" />
@@ -33,18 +34,32 @@
    <table>
     <tr class="mui--appbar-height">
      <td class="mui--text-title">
-      <a href="/">
-       <div class="mui--visible-xs-inline">
+      <a href="/" title="Go to the Home page of this site">
+       <div class="mui--visible-xs-inline mui--hidden-sm">
+        <span class="mui--divider-right">
+         <i class="fa fa-home"></i>&nbsp;
+        </span>
+       </div>
+       <div class="mui--hidden-xs mui--visible-sm-inline">
         Home
        </div>
-       <div class="mui--hidden-xs">
+       <div class="mui--hidden-xs mui--hidden-sm">
         TomHartung.com
        </div>
       </a>
      </td>
      <td align="mui--text-right">
       <ul class="mui-list--inline mui--text-title">
-       <li><a href="/opinions_list">Opinions</a></li>
+       <li>
+        <span class="mui--divider-right">
+         <a href="/opinions_list">Opinions</a>&nbsp;
+        </span>
+       </li>
+       <li>
+        <span class="mui--divider-right">
+         <a href="/about">What?</a>&nbsp;
+        </span>
+       </li>
        <li>
         <div class="mui-dropdown">
          <a data-mui-toggle="dropdown">
@@ -58,7 +73,6 @@
           <li><a href="/legal/privacy_policy">Privacy Policy</a></li>
           <li><a href="/legal/terms_of_service">Terms of Service</a></li>
          </ul>
-         <li><a href="/about">What?</a></li>
         </div>
        </li>
       </ul>
