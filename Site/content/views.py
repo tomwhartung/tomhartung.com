@@ -81,15 +81,21 @@ def opinion_files(request, opinion_file_no_ext='opinion-outline'):
     if opinion_file_no_ext == 'book-alexander_hamilton':
         title = 'Alexander Hamilton'
     elif opinion_file_no_ext == 'book-deep_work':
-        title = "Deep Work: Book Review"
+        title = "Review: Deep Work"
     elif opinion_file_no_ext == 'book-dorie_clark':
-        title = "Review of Dorie Clark's Book"
+        title = "Review of one or more of Dorie Clark's Books"
     elif opinion_file_no_ext == 'book-four_hour_work_week':
-        title = 'Four Hour Work Week'
+        title = 'Review: 4 Hour Workweek'
+    elif opinion_file_no_ext == 'book-to_sell_is_human':
+        title = 'Review: To Sell Is Human'
     elif opinion_file_no_ext == 'opinion-outline':
         title = 'Opinion Outline'
     elif opinion_file_no_ext == 'opinion-nothing_on_this_page_is_real':
         title = 'Nothing on This Page Is Real'
+    elif opinion_file_no_ext == 'rant-facebook_is_the_new_tobacco':
+        title = 'FB Rant'
+    elif opinion_file_no_ext == 'rant-what_is_old':
+        title = 'Rant About How Old Is Old'
     elif opinion_file_no_ext == 'rant-tech_shortage':
         title = 'Tech Shortage Is BS Rant'
     else:
