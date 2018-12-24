@@ -58,7 +58,9 @@ header table {
  * toms-* style classes: My CusTOMizations
  * ---------------------------------------
  */
-h4 {
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 a {
