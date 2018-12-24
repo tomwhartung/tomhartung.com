@@ -79,7 +79,7 @@ def opinion_files(request, opinion_file_no_ext='opinion-outline'):
     """ Load and render the specified opinion_files template """
 
     if opinion_file_no_ext == 'book-alexander_hamilton':
-        title = 'Alexander Hamilton'
+        title = 'Hamilton and Jefferson'
     elif opinion_file_no_ext == 'book-deep_work':
         title = "Review: Deep Work"
     elif opinion_file_no_ext == 'book-dorie_clark':
