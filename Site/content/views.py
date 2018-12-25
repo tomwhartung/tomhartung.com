@@ -81,7 +81,7 @@ def opinion_files(request, opinion_file_no_ext='opinion-outline'):
     if opinion_file_no_ext == 'book-alexander_hamilton':
         title = 'Hamilton and Jefferson'
     elif opinion_file_no_ext == 'book-deep_work':
-        title = "Review: Deep Work"
+        title = "Deep Work by Cal Newport"
     elif opinion_file_no_ext == 'book-dorie_clark':
         title = "Review of one or more of Dorie Clark's Books"
     elif opinion_file_no_ext == 'book-four_hour_work_week':
