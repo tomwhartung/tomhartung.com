@@ -1,11 +1,21 @@
 {% extends 'content/base.html' %}
 
 {% block content %}
- <div class="mui-col-xs-12 mui-col-sm-10 mui-col-sm-offset-1 mui-col-md-8 mui-col-md-offset-2 mui-col-xl-6 mui-col-xl-offset-3">
+<div class="mui-row">
+ <div class="mui-col-xs-12 mui-col-sm-10 mui-col-sm-offset-1 mui-col-md-8 mui-col-md-offset-2 mui-col-xl-7 mui-col-xl-offset-2">
   <div class="mui-panel toms-panel">
-   <h1 class="mui--text-center">
-    Hamilton <em><u>and</u></em> Jefferson Were <em><u>Both Awesome</u></em>
-   </h1>
+   <div class="mui-row">
+    <div class="mui-col-xs-10">
+     <h1 class="mui--text-center">
+      Hamilton <em><u>and</u></em> Jefferson Were <em><u>Both Awesome</u></em>
+     </h1>
+    </div><!-- .mui-col-* -->
+    <div class="mui-col-xs-2">
+    <a href="/opinions_list" title="Back to the list of opinions"
+       class="mui-btn mui-btn--raised mui-btn--primary mui--text-white mui-btn--small">
+     Back</a>
+    </div><!-- .mui-col-* -->
+   </div><!-- .mui-row -->
    <hr>
    <p>
     This page contains affiliate marketing links.
@@ -491,4 +501,5 @@
    </p>
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
+</div><!-- .mui-row -->
 {% endblock %}
