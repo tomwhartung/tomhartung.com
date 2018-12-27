@@ -1,6 +1,6 @@
-# tomhartung.com-django
+# tomhartung.com
 
-Another incarnation of tomhartung.com , this time using django and material design.
+The current incarnation of tomhartung.com , this time using django and MUI-CSS.
 
 # Goal
 
