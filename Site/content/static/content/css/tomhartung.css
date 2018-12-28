@@ -129,7 +129,12 @@ ol.toms-collection {
 .title {
   text-decoration: underline;
 }
-
+/**
+ * For hiding and showing text in panels on the opinions_list page
+ */
+.toms-text-to-toggle {
+  display: none;
+}
 /**
  * Footer CSS
  */
