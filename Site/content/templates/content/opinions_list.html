@@ -389,6 +389,28 @@
 {% endif %}
 
 {% if include_drafts is True %}
+ <!-- Tech Shortage is BS -->
+ <a name="ncpo-x"></a>
+ <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
+  <div class="mui-panel toms-panel">
+   <h6 class="mui--text-center mui--text-danger">&mdash;&nbsp;draft&nbsp;&mdash;</h6>
+   <h2 class="mui--text-center">The Tech Shortage Is Complete BS</h2>
+   <p>
+    There is no shortage of people willing and able to take tech jobs.
+    The problem is racist nazi fuck hiring managers.
+   </p>
+   <p class="mui--text-center">
+     <a href="/opinion_files/rant-tech_shortage" title="Read more about this opinion"
+        class="mui-btn mui-btn--raised mui-btn--primary mui--text-white mui-btn--small">
+      Read More</a>
+   </p>
+  </div><!-- .mui-panel -->
+ </div><!-- .mui-col-* -->
+{% endif %}
+</div><!-- .mui-row -->
+{% endblock %}
+
+{% if include_drafts is True %}
  <!-- Outline -->
  <a name="ncpo-x"></a>
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
@@ -412,28 +434,6 @@
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
 {% endif %}
-
-{% if include_drafts is True %}
- <!-- Tech Shortage is BS -->
- <a name="ncpo-x"></a>
- <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
-  <div class="mui-panel toms-panel">
-   <h6 class="mui--text-center mui--text-danger">&mdash;&nbsp;draft&nbsp;&mdash;</h6>
-   <h2 class="mui--text-center">The Tech Shortage Is Complete BS</h2>
-   <p>
-    There is no shortage of people willing and able to take tech jobs.
-    The problem is racist nazi fuck hiring managers.
-   </p>
-   <p class="mui--text-center">
-     <a href="/opinion_files/rant-tech_shortage" title="Read more about this opinion"
-        class="mui-btn mui-btn--raised mui-btn--primary mui--text-white mui-btn--small">
-      Read More</a>
-   </p>
-  </div><!-- .mui-panel -->
- </div><!-- .mui-col-* -->
-{% endif %}
-</div><!-- .mui-row -->
-{% endblock %}
 
 {% block scripts %}
  {{ block.super }}
