@@ -433,8 +433,30 @@
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
 {% endif %}
-</div><!-- .mui-row -->
-{% endblock %}
+
+{% if include_drafts is True %}
+ <!-- Outline -->
+ <a name="ncpo-x"></a>
+ <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
+  <div class="mui-panel toms-panel">
+   <h6 class="mui--text-center mui--text-danger">&mdash;&nbsp;draft&nbsp;&mdash;</h6>
+   <h1 class="mui--text-center">Ideas Only</h1>
+   <h3 class="mui--text-center">Idea 1 h3</h3>
+   <h4 class="mui--text-center">Idea 2 h4</h4>
+   <h2 class="mui--text-center">Idea 3 h2</h2>
+   <h3 class="mui--text-center">Idea 4 h3</h3>
+   <h4 class="mui--text-center">Idea 5 h4</h4>
+   <p>
+    I get ideas sometimes and need a place to put them.
+   </p>
+   <p>
+   </p>
+   <p class="mui--text-center bold">
+    Central idea goes here.
+   </p>
+  </div><!-- .mui-panel -->
+ </div><!-- .mui-col-* -->
+{% endif %}
 
 {% if include_drafts is True %}
  <!-- Outline -->
@@ -460,6 +482,10 @@
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
 {% endif %}
+
+ <!-- **************** THIS IS THE END OF THE PAGE **************** -->
+</div><!-- .mui-row -->
+{% endblock %}
 
 {% block scripts %}
  {{ block.super }}
