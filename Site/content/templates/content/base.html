@@ -20,11 +20,7 @@
   <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
         rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="{% static 'content/css/tomhartung.css' %}" type="text/css" />
-  <!-- The side menu example has the script tags in the head, and has jquery after muicss.js -->
-  <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="{% static 'content/js/script.js' %} "></script>
-  <link href="{% static 'content/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'content/favicon.ico' %}">
  {% endblock %}
 </head>
 
@@ -125,6 +121,10 @@
  {% endblock %}
 
 {% block scripts %}
+ <!-- The side menu example has the script tags in the head, and has jquery after muicss.js -->
+ <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ <script src="{% static 'content/js/script.js' %} "></script>
 {% endblock %}
 
 </body>
