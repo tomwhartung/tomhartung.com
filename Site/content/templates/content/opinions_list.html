@@ -93,9 +93,26 @@
      huge and totally free &mdash; it's like Christmas to me!
    </p>
    <p class="mui--text-center bold">
-    <a href="" title=""
-       class="mui-btn mui-btn--raised">1st person backstory</a>
+    <a id="toggle-dsw-first-person" title="Show a few more details about this non-corn-pone opinion"
+       class="mui-btn mui-btn--raised">Details</a>
    </p>
+   <div id="dsw-first-person-html" class="toms-text-to-toggle">
+    <p>
+     I first learned about
+      <a href="https://www.denverstartupweek.org/" target="_blank"
+         title="Home page for DenverStartupWeek.org">
+       Denver Startup Week</a>
+      in 2015, at a
+      <a href="https://www.meetup.com/GDG-Denver/"
+         title="GDG Denver meetup page" target="_blank">
+       GDG Denver</a>
+      meetup.
+    </p>
+    <p>
+     Since then I have been to &mdash; and volunteered at &mdash;
+      each and every one!
+    </p>
+   </div><!-- #dsw-first-person-html -->
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
 
@@ -397,4 +414,15 @@
  </div><!-- .mui-col-* -->
 {% endif %}
 </div><!-- .mui-row -->
+{% endblock %}
+
+{% block scripts %}
+ {{ block.super }}
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+ </script>
+ <script>
+  $("#toggle-dsw-first-person").click(function() {
+   $("#dsw-first-person-html").toggle("blind", "slow");
+  });
+ </script>
 {% endblock %}
