@@ -38,12 +38,12 @@
  <a name="ncpo-6"></a>
  <div class="mui-col-xs-12 mui-col-md-6 mui-col-lg-4 mui-col-xl-3">
   <div class="mui-panel toms-panel">
-   <h4 class="mui--text-center">
+   <h2 class="mui--text-center">
     #6:&nbsp;40 Is <em><u>Not</u></em> Old,
     60 Is <em><u>Not</u></em> Old,
     80 Is <q class="italic underline">Getting up There</q>,
     100 Is <em><u>Old</u></em>
-   </h4>
+   </h2>
    <p>
     Mark Twain and Frank Lloyd Wright did some of their best work
      after 60.
@@ -53,10 +53,22 @@
    <p>
    </p>
    <p class="mui--text-center">
-     <a href="/opinion_files/rant-what_is_old" title="Read more about this opinion"
-        class="mui-btn mui-btn--raised mui-btn--primary mui--text-white mui-btn--small">
-      Read More</a>
+    <a id="toggle-40-not-old-first-person" title="Dive a little deeper into this non-corn-pone opinion"
+       class="mui-btn mui-btn--raised">Dive a Little Deeper</a>
    </p>
+   <div id="40-not-old-first-person-html" class="toms-text-to-toggle">
+    <p>
+     I first learned about
+      <a href="https://www.denverstartupweek.org/" target="_blank"
+         title="Home page for DenverStartupWeek.org">
+       Denver Startup Week</a>
+      in 2015, at a
+      <a href="https://www.meetup.com/GDG-Denver/"
+         title="GDG Denver meetup page" target="_blank">
+       GDG Denver</a>
+      meetup.
+    </p>
+   </div><!-- #40-not-old-first-person-html -->
   </div><!-- .mui-panel -->
  </div><!-- .mui-col-* -->
 
@@ -123,7 +135,7 @@
     Since Denver Startup Week is all about the business &mdash; and it's
      huge and totally free &mdash; it's like Christmas to me!
    </p>
-   <p class="mui--text-center bold">
+   <p class="mui--text-center">
     <a id="toggle-dsw-first-person" title="Show a few more details about this non-corn-pone opinion"
        class="mui-btn mui-btn--raised">Details</a>
    </p>
@@ -489,6 +501,9 @@
  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
  </script>
  <script>
+  $("#toggle-40-not-old-first-person").click(function() {
+   $("#40-not-old-first-person-html").toggle("scale", "slow");
+  });
   $("#toggle-dsw-first-person").click(function() {
    $("#dsw-first-person-html").toggle("scale", "slow");
   });
