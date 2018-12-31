@@ -64,7 +64,7 @@ def opinions_list(request):
     else:
         include_drafts = True
 
-    title = 'List of Non-Corn-Pone Opinions';
+    title = 'Non-Corn-Pone Opinions: The List';
 
     template = loader.get_template('content/opinions_list.html')
     context = {
