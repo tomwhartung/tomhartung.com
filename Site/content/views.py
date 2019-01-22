@@ -13,6 +13,7 @@ from django.template import loader
 from django.shortcuts import render
 from django.views.generic.base import View
 
+from .affiliate_marketing import AffiliateLinks
 from .models import RUNNING_LOCALLY
 
 
@@ -32,11 +33,16 @@ def about(request):
 
     """ Load and render the about template """
 
-    title = 'Non-Corn-Pone Opinions';
+    title = 'About Non-Corn-Pone Opinions';
+
+    afl_content = AffiliateLinks.afl_content
+    afl_button = AffiliateLinks.afl_content
 
     template = loader.get_template('content/about.html')
     context = {
         'title': title,
+        'afl_content': afl_content,
+        'afl_button': afl_button,
     }
     return HttpResponse(template.render(context, request))
 
@@ -64,12 +70,17 @@ def opinions_list(request):
     else:
         include_drafts = True
 
-    title = 'Non-Corn-Pone Opinions: The List';
+    title = 'List of Non-Corn-Pone Opinions';
+
+    afl_content = AffiliateLinks.afl_content
+    afl_button = AffiliateLinks.afl_content
 
     template = loader.get_template('content/opinions_list.html')
     context = {
         'include_drafts': include_drafts,
         'title': title,
+        'afl_content': afl_content,
+        'afl_button': afl_button,
     }
     return HttpResponse(template.render(context, request))
 
@@ -101,10 +112,15 @@ def opinion_files(request, opinion_file_no_ext='opinion-outline'):
     else:
         title = '** TITLE NOT SET ***'
 
+    afl_content = AffiliateLinks.afl_content
+    afl_button = AffiliateLinks.afl_content
+
     template_file = 'content/opinion_files/' + opinion_file_no_ext + '.html'
     template = loader.get_template(template_file)
     context = {
         'title': title,
+        'afl_content': afl_content,
+        'afl_button': afl_button,
     }
     return HttpResponse(template.render(context, request))
 
