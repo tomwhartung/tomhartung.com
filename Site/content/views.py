@@ -105,8 +105,6 @@ def opinion_files(request, opinion_file_no_ext='opinion-outline'):
         title = 'Nothing on This Page Is Real'
     elif opinion_file_no_ext == 'rant-facebook_is_the_new_tobacco':
         title = 'FB Rant'
-    elif opinion_file_no_ext == 'rant-what_is_old':
-        title = 'Rant About How Old Is Old'
     elif opinion_file_no_ext == 'rant-tech_shortage':
         title = 'Tech Shortage Is BS Rant'
     else:
