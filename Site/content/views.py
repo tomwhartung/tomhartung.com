@@ -35,8 +35,9 @@ def about(request):
 
     title = 'About Non-Corn-Pone Opinions';
 
-    afl_content = AffiliateLinks.afl_content
-    afl_button = AffiliateLinks.afl_content
+    afl_links = AffiliateLinks()
+    afl_content = afl_links.afl_content
+    afl_button = afl_links.afl_content
 
     template = loader.get_template('content/about.html')
     context = {
@@ -72,8 +73,9 @@ def opinions_list(request):
 
     title = 'List of Non-Corn-Pone Opinions';
 
-    afl_content = AffiliateLinks.afl_content
-    afl_button = AffiliateLinks.afl_content
+    afl_links = AffiliateLinks()
+    afl_content = afl_links.afl_content
+    afl_button = afl_links.afl_content
 
     template = loader.get_template('content/opinions_list.html')
     context = {
@@ -110,8 +112,9 @@ def opinion_files(request, opinion_file_no_ext='opinion-outline'):
     else:
         title = '** TITLE NOT SET ***'
 
-    afl_content = AffiliateLinks.afl_content
-    afl_button = AffiliateLinks.afl_content
+    afl_links = AffiliateLinks()
+    afl_content = afl_links.afl_content
+    afl_button = afl_links.afl_content
 
     template_file = 'content/opinion_files/' + opinion_file_no_ext + '.html'
     template = loader.get_template(template_file)
